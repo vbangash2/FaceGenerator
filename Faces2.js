@@ -35,7 +35,7 @@ function preload(){
     RightEyeArray[i] = loadImage('js/images/RightEye/' + i + '.png');
     MouthArray[i] = loadImage('js/images/Mouth/' + i + '.png');
     NoseArray[i] = loadImage('js/images/Nose/' + i + '.png');
-    table = loadTable('js/PersonalDataImages.csv', 'csv', 'header');
+    table = loadTable('p5/js/PersonalDataImages.csv', 'csv', 'header');
     print("loaded")
   }
 }
@@ -54,10 +54,7 @@ function draw(){
 
 }
 
-//Normal face is unique in that the eyes are guaranteed to be equal reflections over
-//the y-axis, ensuring a more typical layout. They are also the same size, shape, color,
-//and have matching pupil types. The mouth is also set to be in the middle of the screen
-//making the face symmetrical aside from the nose.
+
 function printFace(){
   if(background_bool == true){
     background(0)
